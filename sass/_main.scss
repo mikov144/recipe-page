@@ -1,0 +1,108 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $color-grey-900;
+  height: 100vh;
+
+  .container {
+    padding: 40px;
+    width: 384px;
+    background-color: $color-grey-800;
+    border-radius: 12px;
+
+    @media screen and (max-width: 768px) {
+      width: 456px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 24px;
+      width: 327px;
+    }
+
+    @media screen and (max-width: 340px) {
+      padding: 18px;
+      width: 300px;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &__title {
+        margin: 26px 0 4px;
+        @include typography(1.5rem, 36px, 600);
+      }
+
+      &__description {
+        margin-bottom: 24px;
+        @include typography(0.87rem, 21px, 700);
+        color: $color-lima;
+      }
+
+      &__text {
+        margin-bottom: 24px;
+        @include typography(0.87rem, 21px, 400);
+      }
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 16px 0;
+
+      &__link {
+
+        &-btn {
+          padding: 12px 0;
+          background-color: $color-grey-700;
+          min-width: 300px;
+          border-radius: 8px;
+          @include typography(0.87rem, 21px, 700);
+          transition: 0.1s;
+
+          @media screen and (max-width: 480px) {
+            min-width: 279px;
+          }
+
+          @media screen and (max-width: 340px) {
+            min-width: 260px;
+          }
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: $color-lima;
+              cursor: pointer;
+            }
+
+            &:active {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.69rem;
+
+    & span {
+      color: $color-lima;
+
+      @media (hover: hover) {
+        &:hover {
+          color: $color-olive;
+          cursor: pointer;
+        }
+
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
