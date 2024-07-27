@@ -46,16 +46,23 @@ table {
 	border-spacing: 0;
 }
 
-body {
-  font-family: $font-family;
-  color: $color-white;
+table {
+	font-family: "Outfit", sans-serif;
+	width: 100%;
+	border-spacing: 0;
+	color: plum;
+	margin-top: 0.5rem;
 }
 
-a {
-	text-decoration: none;
-	color: $color-white;
+td {
+	padding-left: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+tr {
+	border-bottom: 1px solid black;
 
-	&:hover {
-		color: $color-grey-700;
+	&:last-of-type {
+		border-bottom: 0;
 	}
 }

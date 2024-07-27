@@ -1,7 +1,41 @@
-$font-family: 'Inter';
-$color-white: #FFFFFF;
-$color-lima: #C4F82A;
-$color-olive: #698515;
-$color-grey-900: #141414;
-$color-grey-800: #1F1F1F;
-$color-grey-700: #333333;
+// Typography
+$font-family: 'Inter', sans-serif;
+$font-size-lg: 24px;
+$font-size-md: 14px;
+$font-size-sm: 11px;
+$font-weight-regular: 400;
+$font-weight-bold-md: 600;
+$font-weight-bold-lg: 700;
+$line-height: 150%;
+$letter-spacing: 0px;
+
+// Colors
+$grey-900: #141414;
+$grey-800: #1F1F1F;
+$grey-700: #333333;
+$green: #C4F82A;
+$white: #FFFFFF;
+$blue: hsl(228, 45%, 44%);
+
+// Containers widths
+$container-max-widths: (
+  xs: 290px,
+  sm: 327px,
+  md: 456px,
+  lg: 384px,
+);
+
+// Breakpoints
+$breakpoints: (
+  xs: 400px,
+  sm: 500px,
+  md: 768px,
+);
+
+// Spacing
+$spacing-500: 40px;
+$spacing-300: 24px;
+$spacing-200: 16px;
+$spacing-150: 12px;
+$spacing-100: 8px;
+$spacing-50: 4px;

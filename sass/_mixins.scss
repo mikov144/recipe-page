@@ -3,3 +3,47 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+// Typography mixins
+@mixin text-base {
+  font-family: $font-family;
+  color: $white;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin text-large-bold {
+  @include text-base;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold-md;
+}
+
+@mixin text-medium-regular {
+  @include text-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+}
+
+@mixin text-medium-bold {
+  @include text-base;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold-lg;
+}
+
+@mixin text-footer {
+  @include text-base;
+  font-size: $font-size-sm;
+  line-height: 100%;
+}
+
+// Container media query mixin
+@mixin md($breakpoint) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+  $max-width-value: map-get($container-max-widths, $breakpoint);
+  @if $breakpoint-value and $max-width-value {
+    @media screen and (max-width: $breakpoint-value) {
+      max-width: $max-width-value;
+      @content;
+    }
+  }
+}
