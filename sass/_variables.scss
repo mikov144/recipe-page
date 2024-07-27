@@ -1,21 +1,26 @@
 // Typography
-$font-family: 'Inter', sans-serif;
-$font-size-lg: 24px;
-$font-size-md: 14px;
-$font-size-sm: 11px;
+$font-family-young: 'Young Serif', sans-serif;
+$font-family-outfit: 'Outfit', sans-serif;
+$font-size-xl: clamp(36px, 2.08vw, 40px);
+$font-size-lg: 28px;
+$font-size-md: 20px;
+$font-size-sm: 16px;
 $font-weight-regular: 400;
-$font-weight-bold-md: 600;
-$font-weight-bold-lg: 700;
-$line-height: 150%;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$line-height-150: 150%;
+$line-height-100: 100%;
 $letter-spacing: 0px;
 
 // Colors
-$grey-900: #141414;
-$grey-800: #1F1F1F;
-$grey-700: #333333;
-$green: #C4F82A;
+$primary-800: #7A284E;
+$primary-50: #FFF7FB;
+$secondary-900: #312E2C;
+$secondary-600: #5F564D;
+$secondary-150: #E3DDD7;
+$secondary-100: #F3E5D7;
+$brown-800: #854632;
 $white: #FFFFFF;
-$blue: hsl(228, 45%, 44%);
 
 // Containers widths
 $container-max-widths: (
@@ -33,9 +38,11 @@ $breakpoints: (
 );
 
 // Spacing
+$spacing-1600: 128px;
+$spacing-600: 48px;
 $spacing-500: 40px;
+$spacing-400: 32px;
 $spacing-300: 24px;
 $spacing-200: 16px;
 $spacing-150: 12px;
 $spacing-100: 8px;
-$spacing-50: 4px;

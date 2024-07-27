@@ -1,7 +1,15 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 600 700;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Young Serif";
+  src: url("../fonts/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,10 +60,17 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3E5D7;
+}
+
 table {
   font-family: "Outfit", sans-serif;
   width: 100%;
-  border-spacing: 0;
   color: plum;
   margin-top: 0.5rem;
 }

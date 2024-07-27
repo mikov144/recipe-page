@@ -1,6 +1,13 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter-VariableFont_slnt_wght.ttf') format('truetype');
+  font-family: 'Outfit';
+  src: url('../fonts/Outfit-VariableFont_wght.ttf') format('truetype');
   font-weight: 400 600 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../fonts/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
