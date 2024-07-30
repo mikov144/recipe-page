@@ -1,0 +1,126 @@
+.recipe-card {
+
+  .recipe-card__header {
+
+    .recipe-card__header-img {
+      margin-bottom: 40px;
+      width: 656px;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+  .recipe-card__description {
+
+    .recipe-card__description-title {
+      margin-bottom: 24px;
+      font-family: $font-family-young;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: $line-height-100;
+      color: $secondary-900;
+    }
+    .recipe-card__description-text {
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: $line-height-150;
+    }
+  }
+  .recipe-card__preparation {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: $primary-50;
+
+    .recipe-card__preparation-title {
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      color: $primary-800;
+      line-height: $line-height-100;
+    }
+    .recipe-card__preparation-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 8px 0;
+      font-size: 16px;
+      line-height: $line-height-150;
+
+      & span {
+        padding-left: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+  .recipe-card__ingredients {
+
+    .recipe-card__ingredients-title {
+      margin-bottom: 24px;
+      font-family: $font-family-young;
+      font-size: 28px;
+      font-weight: 400;
+      color: $brown-800;
+      line-height: $line-height-100;
+    }
+
+    .recipe-card__ingredients-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px 0;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      line-height: $line-height-150;
+
+      & span {
+        padding-left: 16px;
+      }
+    }
+  }
+  .recipe-card__instructions {
+
+    .recipe-card__instructions-title {
+      margin-bottom: 24px;
+      font-family: $font-family-young;
+      font-size: 28px;
+      font-weight: 400;
+      color: $brown-800;
+      line-height: $line-height-100;
+    }
+    .recipe-card__instructions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px 0;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      line-height: $line-height-150;
+
+      & span {
+        padding-left: 16px;
+      }
+    }
+  }
+  .recipe-card__nutrition {
+
+    .recipe-card__nutrition-title {
+      margin-bottom: 24px;
+      font-family: $font-family-young;
+      font-size: 28px;
+      font-weight: 400;
+      color: $brown-800;
+      line-height: $line-height-100;
+    }
+
+    .recipe-card__nutrition-text {
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: $line-height-150;
+    }
+    .recipe-card__nutrition-table {
+
+      & span {
+        color: $brown-800;
+        font-weight: 700;
+        line-height: $line-height-150;
+      }
+    }
+  }
+}

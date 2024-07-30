@@ -4,24 +4,40 @@
 
 body {
   background-color: $secondary-100;
+	font-family: $font-family-outfit;
+	font-weight: 400;
+	color: $secondary-600;
+}
+
+.recipe-card__line {
+	margin-bottom: 32px;
+	flex: 1;
+	height: 1px;
+	background-color: $secondary-150;
 }
 
 table {
-	font-family: "Outfit", sans-serif;
 	width: 100%;
-	color: plum;
-	margin-top: 0.5rem;
 }
 
 td {
-	padding-left: 2rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-left: 32px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 tr {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid $secondary-150;
 
 	&:last-of-type {
 		border-bottom: 0;
 	}
+}
+
+li::marker {
+	color: $primary-800;
+	font-weight: 700;
+}
+
+.recipe-card__instructions-list-item_bold {
+	font-weight: 700;
 }

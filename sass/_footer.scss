@@ -1,0 +1,20 @@
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.69rem;
+
+  & span {
+    color: $secondary-900;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $brown-800;
+        cursor: pointer;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
