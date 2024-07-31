@@ -106,11 +106,24 @@ li::marker {
 
 .container {
   padding: 40px;
+  padding-bottom: 28px;
   margin: 30px auto;
   max-width: 736px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 24px;
+}
+@media screen and (max-width: 1140px) {
+  .container {
+    max-width: 616px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 375px;
+    padding: 40px 30px;
+    padding-bottom: 28px;
+  }
 }
 
 .main {
@@ -128,10 +141,21 @@ li::marker {
   height: auto;
   border-radius: 12px;
 }
+@media screen and (max-width: 1140px) {
+  .recipe-card .recipe-card__header .recipe-card__header-img {
+    max-width: 536px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .recipe-card .recipe-card__header .recipe-card__header-img {
+    max-width: 375px;
+    width: 100%;
+  }
+}
 .recipe-card .recipe-card__description .recipe-card__description-title {
   margin-bottom: 24px;
   font-family: "Young Serif", sans-serif;
-  font-size: 40px;
+  font-size: clamp(36px, 2.08vw, 40px);
   font-weight: 400;
   line-height: 100%;
   color: #312E2C;
@@ -161,8 +185,10 @@ li::marker {
   font-size: 16px;
   line-height: 150%;
 }
-.recipe-card .recipe-card__preparation .recipe-card__preparation-list span {
+.recipe-card .recipe-card__preparation .recipe-card__preparation-list .recipe-card__preparation-list-item {
   padding-left: 16px;
+}
+.recipe-card .recipe-card__preparation .recipe-card__preparation-list .recipe-card__preparation-list-item span {
   font-weight: 700;
 }
 .recipe-card .recipe-card__ingredients .recipe-card__ingredients-title {
@@ -181,7 +207,7 @@ li::marker {
   padding-left: 20px;
   line-height: 150%;
 }
-.recipe-card .recipe-card__ingredients .recipe-card__ingredients-list span {
+.recipe-card .recipe-card__ingredients .recipe-card__ingredients-list .recipe-card__ingredients-list-item {
   padding-left: 16px;
 }
 .recipe-card .recipe-card__instructions .recipe-card__instructions-title {
@@ -200,7 +226,7 @@ li::marker {
   padding-left: 20px;
   line-height: 150%;
 }
-.recipe-card .recipe-card__instructions .recipe-card__instructions-list span {
+.recipe-card .recipe-card__instructions .recipe-card__instructions-list .recipe-card__instructions-list-item {
   padding-left: 16px;
 }
 .recipe-card .recipe-card__nutrition .recipe-card__nutrition-title {
@@ -212,7 +238,7 @@ li::marker {
   line-height: 100%;
 }
 .recipe-card .recipe-card__nutrition .recipe-card__nutrition-text {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 150%;
 }
