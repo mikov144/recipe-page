@@ -1,8 +1,8 @@
 .recipe-card {
 
-  .recipe-card__header {
+  &__header {
 
-    .recipe-card__header-img {
+    &-img {
       margin-bottom: 40px;
       width: 656px;
       height: auto;
@@ -18,9 +18,9 @@
       }
     }
   }
-  .recipe-card__description {
+  &__description {
 
-    .recipe-card__description-title {
+    &-title {
       margin-bottom: 24px;
       font-family: $font-family-young;
       font-size: clamp(36px, 2.08vw, 40px);
@@ -28,25 +28,25 @@
       line-height: $line-height-100;
       color: $secondary-900;
     }
-    .recipe-card__description-text {
+    &-text {
       margin-bottom: 32px;
       font-size: 16px;
       line-height: $line-height-150;
     }
   }
-  .recipe-card__preparation {
+  &__preparation {
     margin-bottom: 32px;
     padding: 24px;
     background-color: $primary-50;
 
-    .recipe-card__preparation-title {
+    &-title {
       margin-bottom: 16px;
       font-size: 20px;
       font-weight: 600;
       color: $primary-800;
       line-height: $line-height-100;
     }
-    .recipe-card__preparation-list {
+    &-list {
       display: flex;
       flex-direction: column;
       padding: 20px;
@@ -54,7 +54,7 @@
       font-size: 16px;
       line-height: $line-height-150;
 
-      .recipe-card__preparation-list-item {
+      &-item {
         padding-left: 16px;
 
         & span {
@@ -63,9 +63,9 @@
       }
     }
   }
-  .recipe-card__ingredients {
+  &__ingredients {
 
-    .recipe-card__ingredients-title {
+    &-title {
       margin-bottom: 24px;
       font-family: $font-family-young;
       font-size: 28px;
@@ -74,7 +74,7 @@
       line-height: $line-height-100;
     }
 
-    .recipe-card__ingredients-list {
+    &-list {
       display: flex;
       flex-direction: column;
       gap: 8px 0;
@@ -82,14 +82,14 @@
       padding-left: 20px;
       line-height: $line-height-150;
 
-      .recipe-card__ingredients-list-item {
+      &-item {
         padding-left: 16px;
       }
     }
   }
-  .recipe-card__instructions {
+  &__instructions {
 
-    .recipe-card__instructions-title {
+    &-title {
       margin-bottom: 24px;
       font-family: $font-family-young;
       font-size: 28px;
@@ -97,7 +97,7 @@
       color: $brown-800;
       line-height: $line-height-100;
     }
-    .recipe-card__instructions-list {
+    &-list {
       display: flex;
       flex-direction: column;
       gap: 8px 0;
@@ -105,14 +105,14 @@
       padding-left: 20px;
       line-height: $line-height-150;
 
-      .recipe-card__instructions-list-item {
+      &-item {
         padding-left: 16px;
       }
     }
   }
-  .recipe-card__nutrition {
+  &__nutrition {
 
-    .recipe-card__nutrition-title {
+    &-title {
       margin-bottom: 24px;
       font-family: $font-family-young;
       font-size: 28px;
@@ -121,12 +121,12 @@
       line-height: $line-height-100;
     }
 
-    .recipe-card__nutrition-text {
+    &-text {
       margin-bottom: 12px;
       font-size: 16px;
       line-height: $line-height-150;
     }
-    .recipe-card__nutrition-table {
+    &-table {
 
       & span {
         color: $brown-800;
