@@ -3,10 +3,8 @@
 }
 
 body {
-  background-color: $secondary-100;
-	font-family: $font-family-outfit;
-	font-weight: 400;
-	color: $secondary-600;
+	background-color: $secondary-100;
+  @include text-base;
 }
 
 .recipe-card__line {
@@ -35,9 +33,9 @@ tr {
 
 li::marker {
 	color: $primary-800;
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 }
 
 .recipe-card__instructions-list-item_bold {
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 }

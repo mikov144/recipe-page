@@ -69,6 +69,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   color: #5F564D;
+  line-height: 100%;
 }
 
 .recipe-card__line {
@@ -110,7 +111,7 @@ li::marker {
   margin: 30px auto;
   max-width: 736px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 24px;
 }
 @media screen and (max-width: 1140px) {
@@ -121,6 +122,15 @@ li::marker {
 @media screen and (max-width: 640px) {
   .container {
     max-width: 375px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 290px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
     padding: 40px 30px;
     padding-bottom: 28px;
   }
@@ -132,36 +142,31 @@ li::marker {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .recipe-card__header-img {
   margin-bottom: 40px;
-  width: 656px;
+  width: 100%;
   height: auto;
   border-radius: 12px;
 }
-@media screen and (max-width: 1140px) {
-  .recipe-card__header-img {
-    max-width: 536px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .recipe-card__header-img {
-    max-width: 375px;
-    width: 100%;
-  }
-}
 .recipe-card__description-title {
   margin-bottom: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-family: "Young Serif", sans-serif;
   font-size: clamp(36px, 2.08vw, 40px);
-  font-weight: 400;
-  line-height: 100%;
   color: #312E2C;
 }
 .recipe-card__description-text {
   margin-bottom: 32px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-size: 16px;
   line-height: 150%;
 }
@@ -172,16 +177,23 @@ li::marker {
 }
 .recipe-card__preparation-title {
   margin-bottom: 16px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-size: 20px;
   font-weight: 600;
   color: #7A284E;
-  line-height: 100%;
 }
 .recipe-card__preparation-list {
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 8px 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-size: 16px;
   line-height: 150%;
 }
@@ -193,11 +205,13 @@ li::marker {
 }
 .recipe-card__ingredients-title {
   margin-bottom: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-family: "Young Serif", sans-serif;
   font-size: 28px;
-  font-weight: 400;
   color: #854632;
-  line-height: 100%;
 }
 .recipe-card__ingredients-list {
   display: flex;
@@ -205,6 +219,11 @@ li::marker {
   gap: 8px 0;
   margin-bottom: 32px;
   padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
+  font-size: 16px;
   line-height: 150%;
 }
 .recipe-card__ingredients-list-item {
@@ -212,11 +231,13 @@ li::marker {
 }
 .recipe-card__instructions-title {
   margin-bottom: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-family: "Young Serif", sans-serif;
   font-size: 28px;
-  font-weight: 400;
   color: #854632;
-  line-height: 100%;
 }
 .recipe-card__instructions-list {
   display: flex;
@@ -224,6 +245,11 @@ li::marker {
   gap: 8px 0;
   margin-bottom: 32px;
   padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
+  font-size: 16px;
   line-height: 150%;
 }
 .recipe-card__instructions-list-item {
@@ -231,14 +257,20 @@ li::marker {
 }
 .recipe-card__nutrition-title {
   margin-bottom: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-family: "Young Serif", sans-serif;
   font-size: 28px;
-  font-weight: 400;
   color: #854632;
-  line-height: 100%;
 }
 .recipe-card__nutrition-text {
   margin-bottom: 12px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
   font-size: 16px;
   line-height: 150%;
 }
@@ -251,7 +283,11 @@ li::marker {
 .footer {
   position: absolute;
   bottom: 10px;
-  font-size: 0.69rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #5F564D;
+  line-height: 100%;
+  font-size: 0.8rem;
 }
 .footer span {
   color: #312E2C;

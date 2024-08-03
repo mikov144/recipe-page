@@ -1,7 +1,7 @@
 .footer {
   position: absolute;
   bottom: 10px;
-  font-size: 0.69rem;
+  @include text-footer;
 
   & span {
     color: $secondary-900;

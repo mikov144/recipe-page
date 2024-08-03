@@ -5,6 +5,7 @@ $font-size-xl: clamp(36px, 2.08vw, 40px);
 $font-size-lg: 28px;
 $font-size-md: 20px;
 $font-size-sm: 16px;
+$font-size-xs: 0.8rem;
 $font-weight-regular: 400;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
@@ -28,6 +29,14 @@ $container-max-widths: (
   sm: 375px,
   md: 616px,
   lg: 736px,
+);
+
+// Containers widths
+$header-img-max-widths: (
+  img-xs: 290px,
+  img-sm: 375px,
+  img-md: 536px,
+  img-lg: 656px,
 );
 
 // Breakpoints
