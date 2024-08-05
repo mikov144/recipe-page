@@ -131,7 +131,7 @@ li::marker {
 }
 @media screen and (max-width: 640px) {
   .container {
-    margin: 30px auto;
+    margin: 0 auto;
     padding: 40px 30px;
     padding-bottom: 28px;
   }
@@ -289,6 +289,11 @@ li::marker {
   color: #5F564D;
   line-height: 100%;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    display: none;
+  }
 }
 .footer span {
   color: #312E2C;

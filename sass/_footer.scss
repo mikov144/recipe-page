@@ -3,6 +3,10 @@
   bottom: 10px;
   @include text-footer;
 
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+
   & span {
     color: $secondary-900;
 

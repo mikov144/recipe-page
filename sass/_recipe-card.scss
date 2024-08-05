@@ -8,9 +8,9 @@
       width: 100%;
       height: auto;
       border-radius: 12px;
-      @include header-img-sz(md);
-      @include header-img-sz(sm);
-      @include header-img-sz(xs);
+      @include header-img-sz(img-lg);
+      @include header-img-sz(img-sm);
+      @include header-img-sz(img-xs);
     }
   }
   &__description {
