@@ -6,13 +6,12 @@
   width: 100%;
   background-color: $white;
   border-radius: 24px;
-  @include md(md);
-  @include md(sm);
-  @include md(xs);
+  @include container-mq;
 
   @media screen and (max-width: 640px) {
     margin: 0 auto;
     padding: 40px 30px;
     padding-bottom: 28px;
+    border-radius: 0;
   }
 }

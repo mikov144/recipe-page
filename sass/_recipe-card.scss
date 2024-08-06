@@ -4,13 +4,9 @@
 
     &-img {
       margin-bottom: 40px;
-      max-width: map-get($header-img-max-widths, lg);
       width: 100%;
       height: auto;
       border-radius: 12px;
-      @include header-img-sz(img-lg);
-      @include header-img-sz(img-sm);
-      @include header-img-sz(img-xs);
     }
   }
   &__description {

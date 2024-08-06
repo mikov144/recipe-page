@@ -39,24 +39,13 @@
 }
 
 // Container media query mixin
-@mixin md($breakpoint) {
-  $breakpoint-value: map-get($breakpoints, $breakpoint);
-  $max-width-value: map-get($container-max-widths, $breakpoint);
-  @if $breakpoint-value and $max-width-value {
-    @media screen and (max-width: $breakpoint-value) {
-      max-width: $max-width-value;
-      @content;
-    }
-  }
-}
-
-@mixin header-img-sz($breakpoint) {
-  $breakpoint-value: map-get($breakpoints, $breakpoint);
-  $max-width-value: map-get($header-img-max-widths, $breakpoint);
-  @if $breakpoint-value and $max-width-value {
-    @media screen and (max-width: $breakpoint-value) {
-      max-width: $max-width-value;
-      @content;
+@mixin container-mq {
+  @each $breakpoint, $breakpoint-value in $breakpoints {
+    $max-width-value: map-get($container-max-widths, $breakpoint);
+    @if $breakpoint-value and $max-width-value {
+      @media screen and (max-width: $breakpoint-value) {
+        max-width: $max-width-value;
+      }
     }
   }
 }
